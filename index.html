@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<head>
+<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Template1 | Marit-Jumper-Page</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" hrexf="">
+        <script src="vue-dev-version.js"></script>
+         <script type='text/javascript' src="/core/dist/ionic.js"></script>
+        <link rel="stylesheet" href="core/css/ionic.bundle.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core@4.7.4/dist/ionic/ionic.esm.js"></script>
+<script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core@4.7.4/dist/ionic/ionic.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core@4.7.4/css/ionic.bundle.css"/>
+    
+     <style>
+            input {
+                width: 100%;
+            }
+            
+            p {
+                color:darkgray;
+            }
+            
+            .url_input {
+                width: 100%;
+            }
+            
+            .divider_div {
+                margin-top: 14px;
+                width: 80%;
+                height: 33px;
+                background-color: beige;
+                
+            }
+            
+            .main_form {
+                width: 100%;
+                display: inline-block;
+                padding-right: 3px;
+            }
+            
+            .code-block-1 {
+                display: inline-block;
+                background-color: black;
+                color: beige;
+                display: inline-block;
+                width: 90%;
+                font-size: 9px;
+
+            }
+            
+            .notes {
+                display: inline-block;
+                min-width: 25%;
+            }
+         
+             .black-divider {
+                width: 100%;
+                height: 24px;
+                background-color: black;
+         }
+         
+        
+            
+            
+        </style>
+    </head>
+    <body>
+        <ion-content>
+
+                <ion-grid id="root">  
+                        <ion-row class="row_one">
+                        <ion-col class="col-one">
+                            
+                            <h3>Dealer.com</h3>
+                            <p>Business Certified</p>
+                            
+                            <ion-button class="main-button" size="small" color="medium" fill="outline" href="/">Biz Certified</ion-button>
+                            <ion-button size="small" color="dark" fill="outline" href=" ">Comm Vehicles</ion-button>
+                            <ion-button size="small" color="dark" fill="outline" href=" ">Warranty</ion-button>
+                            <ion-button size="small" color="dark" fill="outline" href=" ">Trucks</ion-button>
+                            
+                        </ion-col>
+                        <ion-col class="col-two">
+                            
+                        </ion-col>
+                        </ion-row> 
+                        <ion-row class="black-divider"></ion-row>
+                        
+                        <ion-row class="featured-post-row">
+                            <ion-col class="featured-col-1">
+                                
+            <div class="main_form">
+            
+            <p>Dealer Name <input type="text" id="input" v-model="dealer_name"></p>
+            <p>City, State 
+                <input type="text" id="input" v-model="city_state"></p>
+            <p>Phone # <input type="text" id="input" v-model="phone_link_number"></p>
+            <br>
+
+            <p>Hero Image  <input class="url_input" type="text" id="input" v-model="image_1"></p>
+            <p>Hero Image_Link <input class="url_input" type="text" id="input" v-model="image_1_link"></p>
+
+
+            <p>Hero Image_Title <input type="text" id="input" v-model="image_1_title"></p><br>
+
+            <p>Image 1 <input class="url_input" type="text" id="input" v-model="image_1"></p>
+            <p>Image_1_Link <input class="url_input" type="text" id="input" v-model="image_1_link"></p>
+            <p>Image_1_Title <input type="text" id="input" v-model="image_1_title"></p><br>
+
+            <p>Image 2 <input class="url_input" type="text" id="input" v-model="image_2"></p>
+            <p>Image_2_Link <input class="url_input" type="text" id="input" v-model="image_2_link"></p>
+            <p>Image_2_Title <input type="text" id="input" v-model="image_2_title"></p><br>
+
+            <p>Image 3 <input class="url_input" type="text" id="input" v-model="image_3"></p>
+            <p>Image_3_Link <input class="url_input" type="text" id="input" v-model="image_3_link"></p>
+            <p>Image_3_Title <input type="text" id="input" v-model="image_3_title"></p><br>
+
+            <p>Image 4 <input class="url_input" type="text" id="input" v-model="image_4"></p>
+            <p>Image_4_Link <input class="url_input" type="text" id="input" v-model="image_4_link"></p>
+            <p>Image_4_Title <input type="text" id="input" v-model="image_4_title"></p><br>
+
+            <p>Image 5 <input class="url_input" type="text" id="input" v-model="image_5"></p>
+            <p>Image_5_Link <input class="url_input" type="text" id="input" v-model="image_5_link"></p>
+            <p>Image_5_Title <input type="text" id="input" v-model="image_5_title"></p><br>
+
+            <p>Image 6 <input class="url_input" type="text" id="input" v-model="image_6"></p>
+            <p>Image_6_Link <input class="url_input" type="text" id="input" v-model="image_6_link"></p>
+            <p>Image_6_Title <input type="text" id="input" v-model="image_6_title"></p><br>
+            </div>
+
+                            </ion-col>
+                            <ion-col class="featured-col-2">
+                                    <p>Image 7 <input class="url_input" type="text" id="input" v-model="image_7"></p>
+                                <p>Image_7_Link <input class="url_input" type="text" id="input" v-model="image_7_link"></p>
+                                <p>Image_7_Title <input type="text" id="input" v-model="image_7_title"></p><br>
+
+
+    
+                                </ion-col>
+                            <ion-col class="code-block-1">
+                         <td >
+                        <code>
+                        <p>{{block_1}}</p>
+                        <p>{{image_1}}{{image_1_link}}{{image_1_title}}</p>
+                        <p>{{block_2}} {{city_state}} {{block_2_a}} 
+                            {{dealer_name}}{{block_2_b}} {{dealer_name}} at {{phone_link_open}}{{phone_link_number}}{{phone_link_body}}{{phone_link_number}}{{phone_link_close}}
+                        {{block_3}}{{image_2}}{{image_2_link}}{{image_2_title}}{{block_4}}{{dealer_name}}{{block_4_a}}{{dealer_name}}{{block_4_b}}{{phone_button_open}}{{phone_link_number}}{{phone_button_close}}{{block_5_open}}{{dealer_name}}{{block_5_0}} {{city_state}}. {{dealer_name}} {{block_5_a}} {{city_state}} {{block_5_b}} {{city_state}} {{block_5_c}} {{dealer_name}}{{block_5_close}}
+                        {{image_3}}{{image_3_link}}{{image_3_title}}
+                        {{block_6_open}}{{city_state}}{{block_6_a}} {{dealer_name}}{{block_6_close}}{{image_4}}{{image_4_link}}{{image_4_title}}
+                        {{block_7_open}}{{image_5}}{{image_5_link}}{{image_5_title}}{{block_7_a}} {{dealer_name}} {{block_7_close}}{{image_6}}{{image_6_link}}{{image_6_title}}{{block_8}}{{image_7}}{{image_7_link}}{{image_7_title}}<br>
+                        {{block_9}}{{image_8}}{{image_8_link}}{{image_8_title}}{{block_10_open}}{{dealer_name}} {{block_10_close}}{{image_9}}{{image_9_link}}{{image_9_title}}{{block_11}}{{image_10}}{{image_10_link}}{{image_10_title}}{{block_12}}{{image_11}}{{image_11_link}}{{image_11_title}}{{block_13}}{{image_12}}{{image_12_link}}{{image_12_title}}{{block_14}}
+                        {{block_15}}
+
+                        </p>
+                        </code>
+                        </td>
+                             
+
+                                </ion-col>
+                        </ion-row>
+                        <!--Divider-->
+                        <ion-row class="black-divider"></ion-row>
+                        
+
+                       <ion-row>
+                         
+                       </ion-row>
+                        
+                    
+      
+            <ion-row class="footer-row"></ion-row>
+            
+                        </ion-grid>
+
+  
+        
+      <!--  <script src="post_script.js" async defer></script> -->
+        
+       
+
+    
+
+        
+        
+
+<script>
+
+
+new Vue({
+    el: '#root',
+    data: {
+        dealer_name: 'Rosen Nissan of Madison',
+        city_state: ' Madison, WI',
+        
+        block_1: '<div style="width: 100%;"> <div style="width: 100%;"><br></div><div style="width: 100%;"><br> </div> <div><div class="leftColumn" style="width: 25%; display: inline-block;vertical-align: top;padding:20px;">&nbsp;',
+        
+        image_1: '<img src="//pictures.dealer.com/r/rosennissanmadison/0045/b29131efc1850bb08971251872c3314bx.jpg" ',
+        image_1_link: 'href="//pictures.dealer.com/r/rosennissanmadison/0045/b29131efc1850bb08971251872c3314bx.jpg" class="wysiwyg-image" tabindex="30000" style="" ',
+        image_1_title: 'title="NCV_Business_Certified_Logo.png" id="ext-gen2128">&nbsp;',
+        
+        block_2: `</div><div class="rightColumn" style="width: 65%; display: inline-block;vertical-align: top;padding:20px;"> <h3>Why Choose A Nissan Business Certified Dealer?</h3> <p>As your dedicated commercial vehicle dealer in `,
+        //city_state//
+        
+        block_2_a: `, we're sincerely invested in our clients' success. We understand what local small businesses need to flourish and thrive, to run efficiently, to exceed expectations at every turn. When you work with a Nissan Business Certified dealership like`,
+
+        block_2_b: `, you're guaranteed a level of devotion and commitment that's rarely seen in the industry. This is what makes us uniquely qualified to be the area's most trusted commercial truck dealer.</p><p>What's more, our clients can also take advantage of the numerous benefits available through the Nissan Business Certified Program. From commercial vehicle incentive packages to priority auto service, these benefits ensure business owners receive more bang for their buck. Read all about the perks of financing or leasing a commercial Nissan vehicle below, or simply contact`,
+ 
+        
+        phone_link_open: '<a href="tel:',
+        phone_link_number: '608-512-0976',
+        phone_link_body: '" data-phone-ref="null" data-account-ref="null">',
+        phone_link_close: '</a> for more details.</p>',
+        
+        block_3: '</div></div> <div style="width: 100%; background-color: #EBEBEB;vertical-align: middle;height: auto;"><div style="width: 35%; display: inline-block;vertical-align: top;" align="right"> <table style="width: 100%;" width="100%" cellspacing="0" cellpadding="0" border="0" align="center"><tbody><tr><td align="center">',
+        
+        image_2: '<img src="//pictures.dealer.com/r/rosennissanmadison/0221/344eab1cc2cc9d4a92ba9e3fa3d13ec6x.jpg" ',
+        image_2_link: 'href="//pictures.dealer.com/r/rosennissanmadison/0221/344eab1cc2cc9d4a92ba9e3fa3d13ec6x.jpg" class="wysiwyg-image" tabindex="30000" style="border-width: 0px;"  ',
+        image_2_title: 'title="Comm-AcctMgr.jpg" id="ext-gen2129">&nbsp;',
+        
+        block_4: `</td></tr></tbody></table> </div> <div style="width: 60%; height: inherit; display: inline-block;vertical-align: middle;padding:20px;" align="left">&nbsp; &nbsp;<table width="100%" cellspacing="0" cellpadding="0" border="0"><tbody><tr><td style="vertical-align: middle;height: 100%;"><h3>Commercial Vehicle Account Manager</h3> <p>Our Commercial Vehicle Account Manager (CVAM) is your dedicated contact point as you research and complete your purchase with `,
+        //Dealer Name//
+        
+        block_4_a: `. Their experience and knowledge guarantees you a satisfying experience during the purchase and down the road as you maintain your Nissan Commercial vehicle. Contact your `,
+        //Dealer Name//
+
+
+        block_4_b: ` Commercial Vehicle Account Manager today for more information on Nissan's lineup of commercial vehicles.</p></td></tr></tbody></table> <div style="padding-top:30px;" align="center">`,
+        
+        phone_button_open: '<div style="padding-top:30px;" align="center"> <a class="primary" title="Call US" href="tel:',
+        //phone number//
+    
+        phone_button_close: '" style="background-color: #cc0033;color:#fff; text-transform: uppercase;border-width:0;border-style:solid; border-color:transparent; cursor: pointer; font-size: 1.12rem;line-height: 2;text-align: center;max-width: 300px;min-height: 52px; justify-content: center;width: 100%;border-radius:0; letter-spacing: 0.125em;text-decoration: none;" data-phone-ref="null" data-account-ref="null"><button class="btn btn-primary btn-btn-lg ui-button-submit pull-right" style="background-color: #cc0033;color:#fff; text-transform: uppercase;border-width:0;border-style:solid; border-color:transparent; cursor: pointer; font-size: 1.12rem;line-height: 2;text-align: center;max-width: 300px;min-height: 52px; justify-content: center;width: 100%;border-radius:0; letter-spacing: 0.125em;text-decoration: none;">Call Us</button></a></div> </div></div>', 
+        
+        block_5_open: `<div style="padding:20px;"> <h2>Additional Client Perks at `,
+        //dealer_name//
+        block_5_0: `</h2><p>We're proud to offer one of the area's best selections of commercial work trucks and specialty passenger vans, such as the <a title="Titan XD" href="/new-inventory/index.htm?&amp;reset=InventoryListing&amp;make=Nissan&amp;model=Titan+XD">TITAN XD</a> and <a title="NV Passenger" href="/new-inventory/index.htm?&amp;reset=InventoryListing&amp;make=Nissan&amp;model=NV+Passenger+NV3500+HD">NV Passenger</a>. However, our additional dealer-exclusive benefits are what separate us from other commercial dealerships in `,
+        //city_state//
+        //dealer_name//
+        block_5_a: `clients are able to take full advantage of the following:</p> <ul style="list-style: disc; padding-left: 30px;"><li>Dedicated Commercial Vehicle Account Managers</li> <li>Free shuttle service</li> <li>Nissan College Grad Specials and Military Cash Rebates</li> <li>Special`,
+        //city_state//
+        block_5_b: `Nissan pricing, lease terms, and finance interest rates</li> <li>Demo Nissan trucks and vans</li> <li>Commercial loaner vehicles (if available)</li></ul> <p>Put your company on the map. Gain ground on the competition. Corner the market. When you work with our`,
+        //city_state//
+        block_5_c: `commercial vehicle dealership, you can bank on Nissan to help deliver the goods. Contact a CVAM from`,
+        //dealer_name//
+        block_5_close: `today to discuss your options, request a test drive, or start an application for a commercial auto loan.</p></div><div style="width: 100%; background-color: #EBEBEB;vertical-align: middle;height: auto;"><div class="rightColumn" style="width: 45%; display: inline-block;vertical-align: middle;padding:20px;">&nbsp; <a href="#d5" style="font-size:small;text-decoration:none; color:inherit;">`,
+        
+        
+        image_3: '<img src="//pictures.dealer.com/r/rosennissanmadison/1669/4cd1c8bec4e078c7673d6070a2fffc18x.jpg" ',
+        image_3_link: 'href="//pictures.dealer.com/r/rosennissanmadison/1669/4cd1c8bec4e078c7673d6070a2fffc18x.jpg" class="wysiwyg-image" tabindex="30000" style="" ',
+        image_3_title: 'title="5year-100kMile-Warranty.png" id="ext-gen2130"> </a> </div>&nbsp;',
+        
+        block_6_open: `<div class="leftColumn" style="width: 45%; display: inline-block;vertical-align: top;padding:20px;"> <h3>America's Best Commercial Vehicle Warranty<a href="#d5" style="font-size:small;text-decoration:none; color:inherit;"><sup>[*]</sup></a></h3> <p>When you buy a TITAN work truck or cargo van at our Nissan commercial dealership in`,
+        //city_state/
+        block_6_a: `you instantly become part of the "5 Years/100,000 Miles club." Unlike the standard 3-year coverage that comes with other commercial vehicles, select Nissan trucks and vans purchased or leased at a Business Certified dealer are backed by an astonishing 5-year/100,000-mile, bumper-to-bumper warranty. This coverage is applied to all <a href="/new-inventory/index.htm?&amp;reset=InventoryListing&amp;make=Nissan&amp;model=Titan" title="TITAN" target="_self" internallink="true">TITAN</a> and <a href="/new-inventory/index.htm?&amp;reset=InventoryListing&amp;make=Nissan&amp;model=Titan+XD" title="TITAN XD" target="_self" internallink="true">TITAN XD</a> trucks, as well as NV vans.</p> <div style="padding-top:30px;" align="LEFT"> <a class="primary" title="COMMERCIAL WARRANTY DETAILS" href="/nissan-commercial-vehicle-sales-madison/warranty.htm" style="background-color: #cc0033;color:#fff; text-transform: uppercase;border-width:0;border-style:solid; border-color:transparent; cursor: pointer; font-size: 1.12rem;line-height: 2;text-align: center;max-width: 300px;min-height: 52px; justify-content: center;width: 100%;border-radius:0; letter-spacing: 0.125em;text-decoration: none;" target="_self" internallink="true"><button class="btn btn-primary btn-btn-lg ui-button-submit pull-right" style="background-color: #cc0033;color:#fff; text-transform: uppercase;border-width:0;border-style:solid; border-color:transparent; cursor: pointer; font-size: 1.12rem;line-height: 2;text-align: center;max-width: 70%;min-height: 52px; justify-content: center;width: 100%;border-radius:0; letter-spacing: 0.125em;text-decoration: none;">COMMERCIAL WARRANTY DETAILS</button></a></div></div></div> <div style="width: 100%;"><div class="leftColumn" style="width: 45%; display: inline-block;vertical-align: middle;padding:20px;">&nbsp; <h3>24/7 Emergency Commercial Vehicle Roadside Assistance</h3> <p>Breakdowns can occur anywhere and at any time; but that doesn't mean you have to roll with the punches. As a valued client of our Nissan commercial dealership, you're protected with Nissan's 24/7/365 Commercial Vehicle Roadside Assistance program. In the event of an emergency, no matter the place or time, you can request help from a professional. Benefits of this program include tire changes, battery jumps, fuel delivery, lockout service, trip interruption with reimbursement, and emergency towing to a Nissan Business Certified service center near you.</p> </div><div class="rightColumn" style="width: 45%; display: inline-block;vertical-align: top;padding:20px;"> <h3><font size="3" face="DDC Heading Font Face"><br></font>Next Bay Priority Service</h3> <p>Avoid the lines with Nissan's Next Bay Priority Service. When you need to get your commercial trucks or utility vans repaired or serviced, you'll always jump ahead in the queue. For more information about choosing the best Nissan service plan for your company, speak with your Commercial Vehicle Account Manager at `,
+        //dealer_name//
+        block_6_close: `.</p> </div></div>`,
+        
+        image_4: '<img src="//pictures.dealer.com/r/rosennissanmadison/1339/7c9acc0040850b45efe42c7a88259ee0x.jpg" ',
+        image_4_link: 'href="//pictures.dealer.com/r/rosennissanmadison/1339/7c9acc0040850b45efe42c7a88259ee0x.jpg" class="wysiwyg-image" tabindex="30000" style="" ',
+        image_4_title: 'title="Frontier-Work.jpg" id="ext-gen2131">',
+        
+        
+        block_7_open: `</div><div class="rightColumn" style="width: 50%; max-width: 50%; display: inline-block;vertical-align: top;">`,
+        
+        
+        image_5: '<img src="//pictures.dealer.com/r/rosennissanmadison/0086/8a22c0a64bcc01acefc52215f6d456e6x.jpg" ',
+        image_5_link: 'href="//pictures.dealer.com/r/rosennissanmadison/0086/8a22c0a64bcc01acefc52215f6d456e6x.jpg" class="wysiwyg-image" tabindex="30000" style="" ',
+        image_5_title: 'title="ServiceMan.jpg" id="ext-gen2132">',
+        
+        
+        block_7_a: `<span style="text-align: start;">&nbsp;</span> </div></div> <div style="width: 100%; background-color: #EBEBEB;vertical-align: middle;height: auto;"> <div style="padding: 20px;"><h2>Nissan Commercial Vehicle Incentives</h2> <p>Let's help you stand out in a crowd, shall we? When you lease or finance a Nissan commercial vehicle from `,
+        //dealer_name//
+        block_7_close: `, you can choose from one of the following exclusive incentive packages:</p> </div> </div> <div style="width: 100%; background-color: #EBEBEB;vertical-align: middle;height: auto;padding-bottom:20px;"> <div class="slide-wrap" style="width: 100%;" align="center">&nbsp;&nbsp;&nbsp; <a href="#slide-1" style="text-decoration:none; font-weight:bold; color:#000;">1</a>&nbsp; <a href="#slide-2" style="text-decoration:none; font-weight:bold; color:#000;">2</a>&nbsp; <a href="#slide-3" style="text-decoration:none; font-weight:bold; color:#000;">3</a> <div class="slider" style="width: 80%; height: 300px; display: flex;overflow-x: auto;-webkit-overflow-scrolling: touch;scroll-snap-type: x mandatory;">&nbsp; <div class="slide" id="slide-1" style="background-color: #fff;width: 100%;flex-shrink: 0;height: 300px;"> &nbsp; <div style="display: inline-block; width:40%; height: 300px; object-position: right; vertical-align: top;" align="right"> &nbsp;`, 
+        
+        image_6: '<img src="//pictures.dealer.com/r/rosennissanmadison/1954/fcc74cc36883118eb338fcdbcccfdc80x.jpg" ',
+        image_6_link: 'href="//pictures.dealer.com/r/rosennissanmadison/1954/fcc74cc36883118eb338fcdbcccfdc80x.jpg" class="wysiwyg-image" tabindex="30000" style="" ',
+        image_6_title: 'title="CommVeh-Slider-Upfit.jpg" id="ext-gen2133">',
+        
+        block_8: `</div> &nbsp; <div style="background-color: #fff; width:50%; display: inline-block;padding:20px;" align="left"><h3>UPFIT ALLOWANCE<a href="#d2" style="font-size:small;text-decoration:none; color:inherit;"><sup>[2]</sup></a></h3><p>Receive up to $1,000 in Upfit Allowance - customize your Nissan Commercial Van or Truck with ladder racks, toolboxes, vehicle wraps, or a variety of other equipment.</p></div>&nbsp; </div>&nbsp; <div class="slide" id="slide-2" style="background-color: #fff;width: 100%;flex-shrink: 0;height: 100%;"> &nbsp; <div style="display: inline-block; width:40%; height: 300px; object-position: right; vertical-align: top;" align="right"> &nbsp; `,
+        
+        image_7: '<img src="//pictures.dealer.com/r/rosennissanmadison/0162/f582983674bd0f49f641f25fa8bc5765x.jpg" ',
+        image_7_link: 'href="//pictures.dealer.com/r/rosennissanmadison/0162/f582983674bd0f49f641f25fa8bc5765x.jpg" class="wysiwyg-image" tabindex="30000" style="" ',
+        image_7_title: 'title="CommVeh-Slider-Service.jpg" id="ext-gen2134">',
+        
+        block_9: `</div> &nbsp; <div style="background-color: #fff; width:50%; display: inline-block;padding:20px;" align="left"><h3>COMPLIMENTARY 5-YEAR/100,000-MILE SERVICE<a href="#d7" style="font-size:small;text-decoration:none; color:inherit;"><sup>[3]</sup></a></h3><p>Ensure your Nissan commercial van or truck is always ready to go with complimentary oil changes, tire rotations, multi-point inspections, and auto maintenance.</p></div>&nbsp; </div>&nbsp; <div class="slide" id="slide-3" style="background-color: #fff;width: 100%;flex-shrink: 0;height: 100%;"> &nbsp; <div style="display: inline-block; width:40%; height: 300px; object-position: right; vertical-align: top;" align="right"> &nbsp;`,
+        
+        image_8: '<img src="//pictures.dealer.com/r/rosennissanmadison/0314/f1ce04e2e4a7d57d2df2220f53f6e933x.jpg" ',
+        image_8_link: 'href="//pictures.dealer.com/r/rosennissanmadison/0314/f1ce04e2e4a7d57d2df2220f53f6e933x.jpg" class="wysiwyg-image" tabindex="30000" style="" ',
+        image_8_title: 'title="CommVeh-Slider-Cargo.jpg" id="ext-gen2135"></div> &nbsp;',
+        
+        block_10_open: `<div style="background-color: #fff; width:50%; display: inline-block;padding:20px;" align="left"><h3>CARGO MANAGEMENT SOLUTIONS<a href="#d8" style="font-size:small;text-decoration:none; color:inherit;"><sup>[4]</sup></a></h3><p>Keep the work flowing by installing complimentary or low-cost Nissan van shelves, ramps, slide-outs, partitions, bins, and other cargo management solutions.</p></div>&nbsp; </div>&nbsp;&nbsp;&nbsp;</div> </div> </div><br><!--block_11--><div style="width: 100%; vertical-align: middle;height: auto;padding-top:30px;"> <div style="padding: 20px;"><h2>Four Ways To Finance A Nissan Commercial Vehicle&nbsp; </h2> <p>Contact your `,
+        //dealer name//
+        block_10_close: ` Commercial Vehicle Account Manager to submit an application for an NMAC line or credit or receive additional information about TRAC, Signature Leases, or commercial vehicle financing.</p></div></div><div style="width: 100%;padding-right:40px;padding-left:40px;"><div class="leftColumn" style="width: 45%; display: inline-block;vertical-align: middle;padding:20px;"><h3>1. Nissan Commercial Financing</h3>`,
+        
+        image_9: '<img src="//pictures.dealer.com/r/rosennissanmadison/1066/b88debf5a29b9def1975d02b5265e113x.jpg" ',
+        image_9_link: 'href="//pictures.dealer.com/r/rosennissanmadison/1066/b88debf5a29b9def1975d02b5265e113x.jpg" class="wysiwyg-image" tabindex="30000" style="" ',
+        image_9_title: 'title="Finance-CommFin.jpg" id="ext-gen2136">&nbsp;',
+        
+        block_11: `<br>&nbsp; <ul style="list-style: disc; padding-left: 30px;"> &nbsp; <li>Build asset equity by financing your commercial Nissan vans, trucks, or sedans.</li> &nbsp; <li>Depreciation is potentially tax deductible.</li> &nbsp; <li>No mileage restrictions.</li> &nbsp; <li>No fees for wear and tear.</li></ul> </div><div class="rightColumn" style="width: 45%; display: inline-block;vertical-align: top;padding:20px;"> <h3>2. Nissan Commercial Signature Lease<a href="#d3" style="font-size:small;text-decoration:none; color:inherit;"><sup>[5]</sup></a></h3>`,
+        
+        image_10: '<img src="//pictures.dealer.com/r/rosennissanmadison/0106/71c1aaafafc62490a0e98caa62f0c1d0x.jpg" ',
+        image_10_link: 'href="//pictures.dealer.com/r/rosennissanmadison/0106/71c1aaafafc62490a0e98caa62f0c1d0x.jpg" class="wysiwyg-image" tabindex="30000" style="" ',
+        image_10_title: 'title="Finance-SigLease.jpg" id="ext-gen2137">&nbsp;',
+        
+        block_12: '<br>&nbsp; <ul style="list-style: disc; padding-left: 30px;"> &nbsp; <li>A close-ended lease, usually with 2- or 3-year terms.</li> &nbsp; <li>Monthly lease payments are deductible as operating expenses.</li> &nbsp; <li>Drive up to 15,000 miles per year.</li> &nbsp; <li>Always have vehicles covered by a warranty, potentially reducing your total cost of ownership.</li></ul></div></div><div style="width: 100%;padding-right:40px;padding-left:40px;"><div class="leftColumn" style="width: 45%; display: inline-block;vertical-align: middle;padding:20px;"><h3>3. Nissan Commercial TRAC Lease<a href="#d4" style="font-size:small;text-decoration:none; color:inherit;"><sup>[6]</sup></a></h3>', 
+        
+        image_11: '<img src="//pictures.dealer.com/r/rosennissanmadison/0661/929990579d16f7f12883d14101119225x.jpg" ',
+        image_11_link: 'href="//pictures.dealer.com/r/rosennissanmadison/0661/929990579d16f7f12883d14101119225x.jpg" class="wysiwyg-image" tabindex="30000" style="" ',
+        image_11_title: 'title="Finance-TracLease.jpg" id="ext-gen2138">',
+        
+        block_13: '<br>&nbsp; <ul style="list-style: disc; padding-left: 30px;"> &nbsp; <li>An open-ended lease with options to purchase, finance, or return for disposition.</li> &nbsp; <li>No mileage restrictions.</li> &nbsp; <li>No fees for wear and tear.</li> &nbsp; <li>Flexible monthly payments to meet your budgetary needs.</li></ul> </div><div class="rightColumn" style="width: 45%; display: inline-block;vertical-align: top;padding:20px;"> <h3>4. NMAC Line of Credit<a href="#d5" style="font-size:small;text-decoration:none; color:inherit;"><sup>[7]</sup></a></h3>',
+        
+        image_12: '<img src="//pictures.dealer.com/r/rosennissanmadison/0864/b41fd4bd522205e888a1474b0dfbefffx.jpg" ',
+        image_12_link: 'href="//pictures.dealer.com/r/rosennissanmadison/0864/b41fd4bd522205e888a1474b0dfbefffx.jpg" class="wysiwyg-image" tabindex="30000" style="" ',
+        image_12_title: 'title="Finance-NMAC.jpg" id="ext-gen2139"> <br>&nbsp;',
+        
+        block_14: `<ul style="list-style: disc; padding-left: 30px;"> &nbsp; <li>Credit lines tailored to growing businesses.</li> &nbsp; <li>Negotiable down payments.</li> &nbsp; <li>Competitive market rates.</li> &nbsp; <li>Pre-approved annual credit limits.</li></ul> </div></div> `,
+        
+        block_15: `<div style="padding:20px;" id="ext-gen2141"> <p id="d1" style="font-size: small; color:gray;"><sup><br></sup></p><p id="d1" style="font-size: small; color:gray;"><sup><br></sup></p><p id="d1" style="color: gray;"><font size="1"><sup style="">1</sup>Only Nissan Vehicles within a 50-mile radius of a Nissan Certified Collision Center, all others at owners expense.</font></p> <p id="d2" style="color: gray;"><font size="1"><sup>2</sup>Owner receives a commercial upfit package designed, manufactured, tested and installed by an independent upfit supplier. All participating upfit suppliers must be National Truck Equipment Association members. Parts supplied by upfit suppliers and any damage or failures caused by installation or use of upfit parts are not covered by the Nissan New Vehicle Limited Warranty. Owner should review the upfit supplier's warranty. Nissan is not responsible for the safety or quality of the parts or modifications made by the upfit supplier. The Nissan Commercial Incentive Program is only available to valid business entities. Program not available to retail consumers. Certain model restrictions apply. See dealer for complete details and restrictions.</font></p> <p id="d7" style="color: gray;"><font size="1"><sup>3</sup>Applies to NV Cargo only. No refunds will be given for prepaid maintenance not performed at the prescribed intervals or for maintenance services that do not apply to a particular vehicle. Available at Business Certified Dealerships only.</font></p> <p id="d8" style="color: gray;"><font size="1"><sup>4</sup>Owner receives a commercial upfit package designed, manufactured, tested and installed by an independent upfit supplier. All participating upfit suppliers must be National Truck Equipment Association members. Parts supplied by upfit suppliers and any damage or failures caused by installation or use of upfit parts are not covered by the Nissan New Vehicle Limited Warranty. Owner should review the upfit supplier's warranty. Nissan is not responsible for the safety or quality of the parts or modifications made by the upfit supplier. The Nissan Commercial Incentive Program is only available to valid business entities. Program not available to retail consumers. Certain model restrictions apply. See dealer for complete details and restrictions.</font></p> <p id="d3" style="color: gray;"><font size="1"><sup>5</sup>The lease term is the period of time for which a lease agreement is written.<br>The monthly payment is the monthly installment to your loan or lease. However, you should also consider the price of gas, vehicle maintenance, and insurance payments for your monthly budget.<br>This does not constitute tax advice. Please consult with a tax professional regarding deductions for business expenses.</font></p> <p id="d4" style="color: gray;"><font size="1"><sup>6</sup>The monthly payment is the monthly installment to your loan or lease. However, you should also consider the price of gas, vehicle maintenance, and insurance payments for your monthly budget.<br>This does not constitute tax advice. Please consult with a tax professional regarding deductions for business expenses.</font></p> <p id="d5" style="color: gray;"><font size="1"><sup>7</sup>Non-NMAC finance questions should be addressed to your finance company.<br>All applications for credit are subject to credit review, credit approval and appropriate documentation. Once approved, all LOCs are subject to NMAC's discretion.</font></p> <p id="d6" style="color: gray;"><font size="1"><sup style="">*</sup>Claim based on years/mileage (whichever occurs first) covered under the New Vehicle Limited Warranty basic coverage. Ward's in-market Large Pickup Segmentation and Small Pickup Segmentation v. 2019 TITAN and TITAN XD and Wards Light Vehicle Segmentation: 2019 Nissan NV Cargo, NV Passenger v. in-market Large Van Class; 2019 Nissan NV200® v. in-market Small Van Class. Commercial Vans compared only. Nissan's New Vehicle Limited Warranty basic coverage excludes tires, corrosion coverage and federal and California emission performance and defect coverage. Other terms and conditions apply. See dealer for complete warranty details. NV200® Taxi is covered under a separate limited warranty with a different level of coverage.</font></p> </div></div>`
+        
+        
+        
+        
+    
+        
+        
+        
+       
+        
+       
+
+    }
+
+}) 
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+        
+    </body>
+</html>
